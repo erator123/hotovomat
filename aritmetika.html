@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta name="robots", content="index, follow">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.js">
+    <link rel="stylesheet" href="res.css">
+    <title>Tahák</title>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">uvod</a></li>
+                <li><a href="ucit.html">tahák</a></li>
+                <li><a href="kontakt.html">kontakty</a></li>
+                <li><a href="onas.html">o nás</a></li>
+            </ul>
+        </nav>
+        
+   
+    </header>
+</head>
+<body>
+    <br><br>
+    <h1>Aritmetické operace</h1>
+<br><br>
+
+        <p>
+            Slouží pro vykonávání matematických operácií. následující základní operace patří mezi aritmetické operátory:  
+<br><br>
+Sčítání: 1 +1; 
+<br><br>
+Odčítání: 3-2; 
+<br><br>
+Násobení: 3*2; 
+<br><br>
+Dělení: 4/2; 
+<br><br>
+        </p>
+
+       
+        
+<br><br>
+
+<p>
+    Jakým znaménkem zapisujeme děleno v programovaní?
+</p>
+<br><br>
+<input id="input001" type="text" />
+<button onclick="btn001()">Odeslat</button>
+<p id="message001"></p>
+
+          <script>
+            function btn001() {
+var text001;                         /*Tento skript řeší vyhodcení správné odpo
+vědi, který vloží jedinec do formuláře, v případě že je odpověď špatná zobrazí se právná varianta*/
+
+var colors001 = input001.value;
+switch (colors001) {
+case "/":
+text001 = "Správně";
+break;
+    default:
+            text001 = "Správná odpověď je: /";
+}
+document.getElementById("message001").innerHTML = text001;
+}
+             
+          </script>
+          <br><br>
+          <p>Vyberte správnou odpověď</p>
+<br><br>
+          <script>
+            function myFunction(element, color) {
+  element.style.color = color;
+}
+        </script> 
+           <button onclick="myFunction(this, 'red')">Děleno píšeme jako :</button><br><br>
+           <button onclick="myFunction(this, 'green')">Slouží pro aritmetické operace</button>
+   
+      </body>
+      </html>

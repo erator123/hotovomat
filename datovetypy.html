@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta name="robots", content="index, follow">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.js">
+    <link rel="stylesheet" href="res.css">
+    <title>Tahák</title>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">uvod</a></li>
+                <li><a href="ucit.html">tahák</a></li>
+                <li><a href="kontakt.html">kontakty</a></li>
+                <li><a href="onas.html">o nás</a></li>
+            </ul>
+        </nav>
+        
+   
+    </header>
+</head>
+<body>
+    <br><br>
+    <h1>Datové typy v jazyce C</h1>
+<br><br>
+
+        <p>
+            Datové typy nám říkají v jakém formátu ukládáme číslo, a nebo jestli to co ukládáme do proměnný je číslo nebo znak. Proto zde uvedu ty nejdůležitější datové typy, které si musíte zapamatovat. 
+<br><br>
+   Int – do int se ukládají celá čísla 
+<br><br>
+Float – do float se ukládají desetinná čísla 
+<br><br>
+Double – do double se ukládají desetinná čísla 
+<br><br>
+Char – do char se ukládají znaky
+        </p>
+
+<br><br>
+<p>
+    Do jakého datového typu se ukládají znaky ?
+</p>
+<br><br>
+        <input id="input001" type="text" />
+        <button onclick="btn001()">Odeslat</button>
+        <p id="message001"></p>
+        
+                  <script>/*Tento skript řeší vyhodcení správné odpo
+                    vědi, který vloží jedinec do formuláře, v případě že je odpověď špatná zobrazí se právná varianta*/
+                    function btn001() {
+        var text001;
+        var colors001 = input001.value;
+        switch (colors001) {
+        case "char":
+        text001 = "Správně";
+        break;
+            default:
+                    text001 = "Správná odpověď je: char";
+        }
+        document.getElementById("message001").innerHTML = text001;
+        }
+                     
+                  </script>
+<p>Vyberte správnou odpověď</p>
+<br><br>
+
+
+
+        <button onclick="myFunction(this, 'red')">Do char se ukládají celá čísla</button><br><br>
+        <button onclick="myFunction(this, 'green')">Do int se ukládají celá čísla</button>
+
+        <script>
+            function myFunction(element, color) {
+  element.style.color = color;
+}
+        </script>
+</body>
+</html>
